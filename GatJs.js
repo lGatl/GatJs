@@ -74,6 +74,13 @@ var G = function(arg) {
 		}
 		elements.length == 1 ? elements = elements[0] : "";
 
+		elements.vider = function () {
+
+			 while( this.firstChild) {
+   			 	this.removeChild( this.firstChild);
+			 }
+		};
+
 		elements.elthtml = function(arg) {
 
 			var init = function(arg) {
